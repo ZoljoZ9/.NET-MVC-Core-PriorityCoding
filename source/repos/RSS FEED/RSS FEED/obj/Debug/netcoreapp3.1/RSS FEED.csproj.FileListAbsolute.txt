@@ -1,0 +1,117 @@
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\RSS FEED.exe
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\RSS FEED.deps.json
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\RSS FEED.runtimeconfig.json
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\RSS FEED.runtimeconfig.dev.json
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\RSS FEED.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\RSS FEED.pdb
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\RSS FEED.Views.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\RSS FEED.Views.pdb
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.csproj.AssemblyReference.cache
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.AssemblyInfoInputs.cache
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.AssemblyInfo.cs
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.csproj.CoreCompileInputs.cache
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.RazorAssemblyInfo.cache
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.RazorAssemblyInfo.cs
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\staticwebassets\RSS FEED.StaticWebAssets.Manifest.cache
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.TagHelpers.input.cache
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.TagHelpers.output.cache
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.RazorCoreGenerate.cache
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.RazorTargetAssemblyInfo.cache
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.RazorTargetAssemblyInfo.cs
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.Views.pdb
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.pdb
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.genruntimeconfig.cache
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\RSS FEED.csproj.CopyComplete
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\Razor\Views\Winima\Index.cshtml.g.cs
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\Razor\Views\RSSFeed\Index.cshtml.g.cs
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\obj\Debug\netcoreapp3.1\Razor\Views\Privacy\Index.cshtml.g.cs
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\amd64\sqlceca40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\amd64\sqlcecompact40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\amd64\sqlceer40EN.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\amd64\sqlceme40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\amd64\sqlceqp40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\amd64\sqlcese40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\x86\sqlceca40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\x86\sqlcecompact40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\x86\sqlceer40EN.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\x86\sqlceme40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\x86\sqlceqp40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\x86\sqlcese40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Grpc.Core.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Grpc.Core.Api.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\LightInject.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\LightInject.Annotation.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\LightInject.Web.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\System.Web.Mvc.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\System.Web.Razor.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\System.Web.Helpers.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\System.Web.WebPages.Deployment.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\System.Web.WebPages.Razor.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\System.Web.WebPages.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Microsoft.Owin.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\MiniProfiler.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\MiniProfiler.Shared.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\NPoco.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Owin.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Semver.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Serilog.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Serilog.Enrichers.Process.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Serilog.Enrichers.Thread.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Serilog.Filters.Expressions.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Serilog.Formatting.Compact.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Serilog.Formatting.Compact.Reader.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Serilog.Settings.AppSettings.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Serilog.Sinks.Async.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Serilog.Sinks.Map.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Superpower.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\Umbraco.Core.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libgrpc_csharp_ext.arm64.so
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libgrpc_csharp_ext.x64.so
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libgrpc_csharp_ext.x64.dylib
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\grpc_csharp_ext.x64.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\grpc_csharp_ext.x86.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sqlceca40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sqlcecompact40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sqlceer40EN.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sqlceme40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sqlceqp40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sqlcese40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sqlceca40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sqlcecompact40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sqlceer40EN.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sqlceme40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sqlceqp40.dll
+C:\Users\matthewz\source\repos\RSS FEED\RSS FEED\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sqlcese40.dll

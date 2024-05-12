@@ -1,0 +1,449 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\PC Logo.jpg",
+      "PackagePath": "staticwebassets\\CSS\\PC Logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\Winima.png",
+      "PackagePath": "staticwebassets\\CSS\\Winima.png"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\animate.css",
+      "PackagePath": "staticwebassets\\CSS\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\bootstrap.css",
+      "PackagePath": "staticwebassets\\CSS\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\CSS\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\CSS\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\bootstrap1.min.css",
+      "PackagePath": "staticwebassets\\CSS\\bootstrap1.min.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\bootstrap2.min.js",
+      "PackagePath": "staticwebassets\\CSS\\bootstrap2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\demo.css",
+      "PackagePath": "staticwebassets\\CSS\\demo.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\flex-slider.css",
+      "PackagePath": "staticwebassets\\CSS\\flex-slider.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\fontawesome.css",
+      "PackagePath": "staticwebassets\\CSS\\fontawesome.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\headers.css",
+      "PackagePath": "staticwebassets\\CSS\\headers.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\jquery.js",
+      "PackagePath": "staticwebassets\\CSS\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\jquery.min.js",
+      "PackagePath": "staticwebassets\\CSS\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\jquery.min.map",
+      "PackagePath": "staticwebassets\\CSS\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\CSS\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\CSS\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\CSS\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\lightbox.css",
+      "PackagePath": "staticwebassets\\CSS\\lightbox.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\CSS\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\owl.css",
+      "PackagePath": "staticwebassets\\CSS\\owl.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\search.css",
+      "PackagePath": "staticwebassets\\CSS\\search.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\site.css",
+      "PackagePath": "staticwebassets\\CSS\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\style.css",
+      "PackagePath": "staticwebassets\\CSS\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\style1.css",
+      "PackagePath": "staticwebassets\\CSS\\style1.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\CSS\\templatemo-grad-school.css",
+      "PackagePath": "staticwebassets\\CSS\\templatemo-grad-school.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\Fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\Fonts\\Flaticon.svg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\Fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\_flaticon.scss",
+      "PackagePath": "staticwebassets\\Fonts\\_flaticon.scss"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\cheatsheet.html",
+      "PackagePath": "staticwebassets\\Fonts\\cheatsheet.html"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\flaticon.css",
+      "PackagePath": "staticwebassets\\Fonts\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\flaticon.html",
+      "PackagePath": "staticwebassets\\Fonts\\flaticon.html"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\Fonts\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\Fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\Fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\Fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\Fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\ionicons.css",
+      "PackagePath": "staticwebassets\\Fonts\\ionicons.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\ionicons.eot",
+      "PackagePath": "staticwebassets\\Fonts\\ionicons.eot"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\ionicons.min.css",
+      "PackagePath": "staticwebassets\\Fonts\\ionicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\ionicons.svg",
+      "PackagePath": "staticwebassets\\Fonts\\ionicons.svg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\ionicons.ttf",
+      "PackagePath": "staticwebassets\\Fonts\\ionicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Fonts\\ionicons.woff",
+      "PackagePath": "staticwebassets\\Fonts\\ionicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\angularjs.jpg",
+      "PackagePath": "staticwebassets\\Images\\angularjs.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\big_image_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\big_image_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\big_image_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\big_image_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\img_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\img_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\img_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\javascript.jpg",
+      "PackagePath": "staticwebassets\\Images\\javascript.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\person_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\person_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\person_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\person_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\person_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\person_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\person_4.jpg",
+      "PackagePath": "staticwebassets\\Images\\person_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\person_5.jpg",
+      "PackagePath": "staticwebassets\\Images\\person_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\person_6.jpg",
+      "PackagePath": "staticwebassets\\Images\\person_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\person_testimonial_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\person_testimonial_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\photoshop.jpg",
+      "PackagePath": "staticwebassets\\Images\\photoshop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\reactjs.jpg",
+      "PackagePath": "staticwebassets\\Images\\reactjs.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\webdesign.jpg",
+      "PackagePath": "staticwebassets\\Images\\webdesign.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\Images\\wordpress.jpg",
+      "PackagePath": "staticwebassets\\Images\\wordpress.jpg"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\js\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\js\\jquery-migrate-3.0.0.js",
+      "PackagePath": "staticwebassets\\js\\jquery-migrate-3.0.0.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\js\\jquery.stellar.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.stellar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\js\\jquery.waypoints.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\matth\\source\\repos\\RSS FEED\\RSS FEED\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.RSS FEED.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.RSS FEED.props",
+      "PackagePath": "build\\RSS FEED.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.RSS FEED.props",
+      "PackagePath": "buildMultiTargeting\\RSS FEED.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.RSS FEED.props",
+      "PackagePath": "buildTransitive\\RSS FEED.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

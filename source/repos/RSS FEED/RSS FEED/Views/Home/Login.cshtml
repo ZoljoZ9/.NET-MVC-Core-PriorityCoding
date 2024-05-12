@@ -1,0 +1,131 @@
+﻿@model RSS_FEED.Models.Login
+
+@{
+    ViewBag.Title= "Index";
+}
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/css/style.css")"  media="screen" />
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/css/style1.css")"  media="screen" />
+
+
+<body> 
+    <section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(images/big_image_1.jpg);">
+      <div class="container">
+        <div class="row align-items-center site-hero-inner justify-content-center">
+            <div class="container login-container">
+        <div class="col-md-4 login-form">
+            <span style="color:red">@ViewBag.error</span>
+            <h4>User Login Form</h4>
+            <form asp-action="Login">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group.">
+                    <input type="text" asp-for="Email" class="form-control" placeholder="Your Email *" value="" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" asp-for="Password" class="form-control" placeholder="Your Password *" value="" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btnSubmit" value="Login" />
+                </div>
+                <div class="form-group">
+                    <a href="#" class="ForgetPsd">Forget Password?</a>
+                </div>
+            </form>
+ </div>
+
+     
+</div>
+        </div>
+      </div>
+
+    </section>
+
+
+    
+      @section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+
+</body> 
+
+<style>
+
+    .login-container {
+        margin-top: 4%;
+        margin-bottom: 4%;
+  text-align: center;
+
+    }
+
+    .signup-form{
+        padding: 4%;
+        border-radius: 8px;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+            display: inline-block;
+  vertical-align: middle;
+  background-color:white;
+    justify-content: space-between;
+
+
+
+
+    }
+
+    .login-form {
+        padding: 4%;
+        border-radius: 8px;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+            display: inline-block;
+  vertical-align: middle;
+       background-color:white;
+    }
+
+    .login-form h3 {
+        text-align: center;
+        color: #333;
+
+    }
+
+    .login-container form {
+        padding: 9%;
+
+
+    }
+     .signup-form h3 {
+        text-align: center;
+        color: #333;
+
+    }
+
+    .btnSubmit {
+        width: 51%;
+        border-radius: 1rem;
+        padding: 1.5%;
+        cursor: pointer;
+        border: none;
+    }
+
+    .login-form .btnSubmit {
+        font-weight: 600;
+        color: #fff;
+        background-color: #0062cc;
+    }
+        .signup-form .btnSubmit {
+        font-weight: 600;
+        color: #fff;
+        background-color: #0062cc;
+    }
+
+    .login-form .ForgetPsd {
+        color: #0062cc;
+        font-weight: 600;
+        text-decoration: none;
+    }
+        body {
+        font-family: "Helvetica Neue", Helvetica, Arial;
+    }
+</style>
+
