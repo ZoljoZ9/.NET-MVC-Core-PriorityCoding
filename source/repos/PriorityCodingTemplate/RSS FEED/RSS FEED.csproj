@@ -1,0 +1,969 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>RSS_FEED</RootNamespace>
+    <UserSecretsId>48dd77e3-235e-4320-8233-f9c7ab1567eb</UserSecretsId>
+  </PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="obj\**" />
+	  <Compile Remove="Views\NewFolder\**" />
+	  <Content Remove="obj\**" />
+	  <Content Remove="Views\NewFolder\**" />
+	  <EmbeddedResource Remove="obj\**" />
+	  <EmbeddedResource Remove="Views\NewFolder\**" />
+	  <None Remove="obj\**" />
+	  <None Remove="Views\NewFolder\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Models\Ad_login.cs" />
+	  <Compile Remove="Models\db.cs" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\CSS\animate.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\CSS\bootstrap.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\CSS\bootstrap.css.map" />
+    <_ContentIncludedByDefault Remove="wwwroot\CSS\owl.carousel.min.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="{bee4bfec-6683-3e67-9167-3c0cbc68f40a}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>bee4bfec-6683-3e67-9167-3c0cbc68f40a</Guid>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net6.0\appsettings.Development.json" />
+    <Content Include="bin\Debug\net6.0\appsettings.json" />
+    <Content Include="bin\Debug\net6.0\RSS FEED.deps.json" />
+    <Content Include="bin\Debug\net6.0\RSS FEED.runtimeconfig.json" />
+    <Content Include="bin\Debug\net6.0\RSS FEED.staticwebassets.runtime.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\appsettings.Development.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\appsettings.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\RSS FEED.deps.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\RSS FEED.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\RSS FEED.runtimeconfig.json" />
+    <Content Include="bin\Release\net6.0\appsettings.Development.json" />
+    <Content Include="bin\Release\net6.0\appsettings.json" />
+    <Content Include="bin\Release\net6.0\RSS FEED.deps.json" />
+    <Content Include="bin\Release\net6.0\RSS FEED.runtimeconfig.json" />
+    <Content Include="bin\Release\net6.0\RSS FEED.staticwebassets.runtime.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.Core" Version="2.46.3" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.9" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
+    <None Include="bin\Debug\net6.0\amd64\Microsoft.VC90.CRT\msvcr90.dll" />
+    <None Include="bin\Debug\net6.0\amd64\sqlceca40.dll" />
+    <None Include="bin\Debug\net6.0\amd64\sqlcecompact40.dll" />
+    <None Include="bin\Debug\net6.0\amd64\sqlceer40EN.dll" />
+    <None Include="bin\Debug\net6.0\amd64\sqlceme40.dll" />
+    <None Include="bin\Debug\net6.0\amd64\sqlceqp40.dll" />
+    <None Include="bin\Debug\net6.0\amd64\sqlcese40.dll" />
+    <None Include="bin\Debug\net6.0\Grpc.Core.Api.dll" />
+    <None Include="bin\Debug\net6.0\Grpc.Core.dll" />
+    <None Include="bin\Debug\net6.0\Humanizer.dll" />
+    <None Include="bin\Debug\net6.0\LightInject.Annotation.dll" />
+    <None Include="bin\Debug\net6.0\LightInject.dll" />
+    <None Include="bin\Debug\net6.0\LightInject.Web.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.AspNet.Identity.Core.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.Identity.Client.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.Owin.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll" />
+    <None Include="bin\Debug\net6.0\MiniProfiler.dll" />
+    <None Include="bin\Debug\net6.0\MiniProfiler.Shared.dll" />
+    <None Include="bin\Debug\net6.0\Newtonsoft.Json.Bson.dll" />
+    <None Include="bin\Debug\net6.0\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\net6.0\NPoco.dll" />
+    <None Include="bin\Debug\net6.0\Owin.dll" />
+    <None Include="bin\Debug\net6.0\RSS FEED.dll" />
+    <None Include="bin\Debug\net6.0\RSS FEED.exe" />
+    <None Include="bin\Debug\net6.0\RSS FEED.pdb" />
+    <None Include="bin\Debug\net6.0\runtimes\linux-arm64\native\libgrpc_csharp_ext.arm64.so" />
+    <None Include="bin\Debug\net6.0\runtimes\linux-x64\native\libgrpc_csharp_ext.x64.so" />
+    <None Include="bin\Debug\net6.0\runtimes\osx-x64\native\libgrpc_csharp_ext.x64.dylib" />
+    <None Include="bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x64\native\grpc_csharp_ext.x64.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.VC90.CRT\msvcr90.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x64\native\sni.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x64\native\sqlceca40.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x64\native\sqlcecompact40.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x64\native\sqlceer40EN.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x64\native\sqlceme40.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x64\native\sqlceqp40.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x64\native\sqlcese40.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x86\native\grpc_csharp_ext.x86.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.VC90.CRT\msvcr90.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x86\native\sni.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x86\native\sqlceca40.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x86\native\sqlcecompact40.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x86\native\sqlceer40EN.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x86\native\sqlceme40.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x86\native\sqlceqp40.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win-x86\native\sqlcese40.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Debug\net6.0\Semver.dll" />
+    <None Include="bin\Debug\net6.0\Serilog.dll" />
+    <None Include="bin\Debug\net6.0\Serilog.Enrichers.Process.dll" />
+    <None Include="bin\Debug\net6.0\Serilog.Enrichers.Thread.dll" />
+    <None Include="bin\Debug\net6.0\Serilog.Filters.Expressions.dll" />
+    <None Include="bin\Debug\net6.0\Serilog.Formatting.Compact.dll" />
+    <None Include="bin\Debug\net6.0\Serilog.Formatting.Compact.Reader.dll" />
+    <None Include="bin\Debug\net6.0\Serilog.Settings.AppSettings.dll" />
+    <None Include="bin\Debug\net6.0\Serilog.Sinks.Async.dll" />
+    <None Include="bin\Debug\net6.0\Serilog.Sinks.File.dll" />
+    <None Include="bin\Debug\net6.0\Serilog.Sinks.Map.dll" />
+    <None Include="bin\Debug\net6.0\Superpower.dll" />
+    <None Include="bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll" />
+    <None Include="bin\Debug\net6.0\System.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net6.0\System.Drawing.Common.dll" />
+    <None Include="bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <None Include="bin\Debug\net6.0\System.Net.Http.Formatting.dll" />
+    <None Include="bin\Debug\net6.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Debug\net6.0\System.Security.Permissions.dll" />
+    <None Include="bin\Debug\net6.0\System.Web.Helpers.dll" />
+    <None Include="bin\Debug\net6.0\System.Web.Mvc.dll" />
+    <None Include="bin\Debug\net6.0\System.Web.Razor.dll" />
+    <None Include="bin\Debug\net6.0\System.Web.WebPages.Deployment.dll" />
+    <None Include="bin\Debug\net6.0\System.Web.WebPages.dll" />
+    <None Include="bin\Debug\net6.0\System.Web.WebPages.Razor.dll" />
+    <None Include="bin\Debug\net6.0\System.Windows.Extensions.dll" />
+    <None Include="bin\Debug\net6.0\Umbraco.Core.dll" />
+    <None Include="bin\Debug\net6.0\web.config" />
+    <None Include="bin\Debug\net6.0\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
+    <None Include="bin\Debug\net6.0\x86\Microsoft.VC90.CRT\msvcr90.dll" />
+    <None Include="bin\Debug\net6.0\x86\sqlceca40.dll" />
+    <None Include="bin\Debug\net6.0\x86\sqlcecompact40.dll" />
+    <None Include="bin\Debug\net6.0\x86\sqlceer40EN.dll" />
+    <None Include="bin\Debug\net6.0\x86\sqlceme40.dll" />
+    <None Include="bin\Debug\net6.0\x86\sqlceqp40.dll" />
+    <None Include="bin\Debug\net6.0\x86\sqlcese40.dll" />
+    <None Include="bin\Debug\net6.0\xunit.abstractions.dll" />
+    <None Include="bin\Debug\net6.0\xunit.core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
+    <None Include="bin\Debug\netcoreapp3.1\amd64\Microsoft.VC90.CRT\msvcr90.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\amd64\sqlceca40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\amd64\sqlcecompact40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\amd64\sqlceer40EN.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\amd64\sqlceme40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\amd64\sqlceqp40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\amd64\sqlcese40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Grpc.Core.Api.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Grpc.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\LightInject.Annotation.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\LightInject.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\LightInject.Web.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Owin.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\MiniProfiler.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\MiniProfiler.Shared.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\NPoco.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Owin.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\RSS FEED.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\RSS FEED.exe" />
+    <None Include="bin\Debug\netcoreapp3.1\RSS FEED.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\RSS FEED.Views.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\RSS FEED.Views.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libgrpc_csharp_ext.arm64.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libgrpc_csharp_ext.x64.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libgrpc_csharp_ext.x64.dylib" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\grpc_csharp_ext.x64.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.VC90.CRT\msvcr90.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sqlceca40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sqlcecompact40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sqlceer40EN.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sqlceme40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sqlceqp40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sqlcese40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\grpc_csharp_ext.x86.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.VC90.CRT\msvcr90.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sqlceca40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sqlcecompact40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sqlceer40EN.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sqlceme40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sqlceqp40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sqlcese40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Semver.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Serilog.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Serilog.Enrichers.Process.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Serilog.Enrichers.Thread.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Serilog.Filters.Expressions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Serilog.Formatting.Compact.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Serilog.Formatting.Compact.Reader.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Serilog.Settings.AppSettings.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Serilog.Sinks.Async.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Serilog.Sinks.Map.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Superpower.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Web.Helpers.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Web.Mvc.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Web.Razor.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Web.WebPages.Deployment.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Web.WebPages.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Web.WebPages.Razor.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Umbraco.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
+    <None Include="bin\Debug\netcoreapp3.1\x86\Microsoft.VC90.CRT\msvcr90.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\x86\sqlceca40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\x86\sqlcecompact40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\x86\sqlceer40EN.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\x86\sqlceme40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\x86\sqlceqp40.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\x86\sqlcese40.dll" />
+    <None Include="bin\Release\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Release\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\cs\Microsoft.CodeAnalysis.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\cs\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Release\net6.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll" />
+    <None Include="bin\Release\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" />
+    <None Include="bin\Release\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Release\net6.0\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\de\Microsoft.CodeAnalysis.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\de\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Release\net6.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll" />
+    <None Include="bin\Release\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" />
+    <None Include="bin\Release\net6.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\dotnet-aspnet-codegenerator-design.dll" />
+    <None Include="bin\Release\net6.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Release\net6.0\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\es\Microsoft.CodeAnalysis.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\es\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Release\net6.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll" />
+    <None Include="bin\Release\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" />
+    <None Include="bin\Release\net6.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Release\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\fr\Microsoft.CodeAnalysis.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\fr\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Release\net6.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll" />
+    <None Include="bin\Release\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" />
+    <None Include="bin\Release\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\Grpc.Core.Api.dll" />
+    <None Include="bin\Release\net6.0\Grpc.Core.dll" />
+    <None Include="bin\Release\net6.0\Humanizer.dll" />
+    <None Include="bin\Release\net6.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Release\net6.0\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\it\Microsoft.CodeAnalysis.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\it\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Release\net6.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll" />
+    <None Include="bin\Release\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" />
+    <None Include="bin\Release\net6.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Release\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\ja\Microsoft.CodeAnalysis.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\ja\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Release\net6.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll" />
+    <None Include="bin\Release\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" />
+    <None Include="bin\Release\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Release\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\ko\Microsoft.CodeAnalysis.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\ko\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Release\net6.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll" />
+    <None Include="bin\Release\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" />
+    <None Include="bin\Release\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\MessagePack.Annotations.dll" />
+    <None Include="bin\Release\net6.0\MessagePack.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.AspNetCore.Razor.Language.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.Build.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.Build.Framework.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.CodeAnalysis.CSharp.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.CodeAnalysis.CSharp.Features.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.CodeAnalysis.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.CodeAnalysis.Features.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.CodeAnalysis.Razor.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.CodeAnalysis.Scripting.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.CodeAnalysis.VisualBasic.Features.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.CodeAnalysis.Workspaces.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.DiaSymReader.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.EntityFrameworkCore.Design.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.EntityFrameworkCore.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.Extensions.Caching.Memory.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.Extensions.DependencyModel.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.Identity.Client.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.IdentityModel.Logging.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.IdentityModel.Protocols.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.IdentityModel.Tokens.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.NET.StringTools.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.VisualStudio.Debugger.Contracts.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.Web.Infrastructure.dll" />
+    <None Include="bin\Release\net6.0\Microsoft.Win32.SystemEvents.dll" />
+    <None Include="bin\Release\net6.0\Newtonsoft.Json.dll" />
+    <None Include="bin\Release\net6.0\NuGet.Common.dll" />
+    <None Include="bin\Release\net6.0\NuGet.Configuration.dll" />
+    <None Include="bin\Release\net6.0\NuGet.DependencyResolver.Core.dll" />
+    <None Include="bin\Release\net6.0\NuGet.Frameworks.dll" />
+    <None Include="bin\Release\net6.0\NuGet.LibraryModel.dll" />
+    <None Include="bin\Release\net6.0\NuGet.Packaging.dll" />
+    <None Include="bin\Release\net6.0\NuGet.ProjectModel.dll" />
+    <None Include="bin\Release\net6.0\NuGet.Protocol.dll" />
+    <None Include="bin\Release\net6.0\NuGet.Versioning.dll" />
+    <None Include="bin\Release\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Release\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\pl\Microsoft.CodeAnalysis.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\pl\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Release\net6.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll" />
+    <None Include="bin\Release\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" />
+    <None Include="bin\Release\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll" />
+    <None Include="bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" />
+    <None Include="bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Antiforgery.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Authentication.Cookies.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Authentication.Core.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Authentication.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Authentication.OAuth.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Authorization.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Authorization.Policy.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Components.Authorization.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Components.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Components.Forms.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Components.Server.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Components.Web.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Connections.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.CookiePolicy.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Cors.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Cryptography.Internal.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.DataProtection.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Diagnostics.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Diagnostics.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.HostFiltering.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Hosting.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Hosting.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Html.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Http.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Http.Connections.Common.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Http.Connections.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Http.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Http.Extensions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Http.Features.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Http.Results.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.HttpLogging.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.HttpOverrides.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.HttpsPolicy.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Identity.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Localization.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Localization.Routing.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Metadata.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Mvc.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Mvc.ApiExplorer.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Mvc.Core.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Mvc.Cors.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Mvc.DataAnnotations.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Mvc.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Mvc.Formatters.Json.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Mvc.Localization.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Mvc.Razor.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Mvc.RazorPages.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Mvc.TagHelpers.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Mvc.ViewFeatures.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Razor.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Razor.Runtime.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.ResponseCaching.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.ResponseCompression.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Rewrite.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Routing.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Routing.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Server.HttpSys.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Server.IIS.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Server.IISIntegration.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Server.Kestrel.Core.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Server.Kestrel.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.Session.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.SignalR.Common.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.SignalR.Core.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.SignalR.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.SignalR.Protocols.Json.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.StaticFiles.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.WebSockets.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.AspNetCore.WebUtilities.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.CSharp.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Caching.Memory.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Configuration.Binder.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Configuration.CommandLine.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Configuration.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Configuration.EnvironmentVariables.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Configuration.FileExtensions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Configuration.Ini.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Configuration.Json.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Configuration.UserSecrets.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Configuration.Xml.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.DependencyInjection.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Features.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.FileProviders.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.FileProviders.Composite.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.FileProviders.Embedded.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.FileProviders.Physical.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.FileSystemGlobbing.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Hosting.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Hosting.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Http.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Identity.Core.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Identity.Stores.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Localization.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Localization.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Logging.Configuration.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Logging.Console.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Logging.Debug.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Logging.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Logging.EventLog.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Logging.EventSource.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Logging.TraceSource.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.ObjectPool.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Options.DataAnnotations.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Options.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.Primitives.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Extensions.WebEncoders.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.JSInterop.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Net.Http.Headers.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.VisualBasic.Core.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.VisualBasic.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Win32.Primitives.dll" />
+    <None Include="bin\Release\net6.0\refs\Microsoft.Win32.Registry.dll" />
+    <None Include="bin\Release\net6.0\refs\mscorlib.dll" />
+    <None Include="bin\Release\net6.0\refs\netstandard.dll" />
+    <None Include="bin\Release\net6.0\refs\System.AppContext.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Buffers.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Collections.Concurrent.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Collections.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Collections.Immutable.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Collections.NonGeneric.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Collections.Specialized.dll" />
+    <None Include="bin\Release\net6.0\refs\System.ComponentModel.Annotations.dll" />
+    <None Include="bin\Release\net6.0\refs\System.ComponentModel.DataAnnotations.dll" />
+    <None Include="bin\Release\net6.0\refs\System.ComponentModel.dll" />
+    <None Include="bin\Release\net6.0\refs\System.ComponentModel.EventBasedAsync.dll" />
+    <None Include="bin\Release\net6.0\refs\System.ComponentModel.Primitives.dll" />
+    <None Include="bin\Release\net6.0\refs\System.ComponentModel.TypeConverter.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Configuration.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Console.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Core.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Data.Common.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Data.DataSetExtensions.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Data.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Diagnostics.Contracts.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Diagnostics.Debug.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Diagnostics.DiagnosticSource.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Diagnostics.EventLog.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Diagnostics.FileVersionInfo.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Diagnostics.Process.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Diagnostics.StackTrace.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Diagnostics.TextWriterTraceListener.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Diagnostics.Tools.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Diagnostics.TraceSource.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Diagnostics.Tracing.dll" />
+    <None Include="bin\Release\net6.0\refs\System.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Drawing.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Drawing.Primitives.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Dynamic.Runtime.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Formats.Asn1.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Globalization.Calendars.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Globalization.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Globalization.Extensions.dll" />
+    <None Include="bin\Release\net6.0\refs\System.IO.Compression.Brotli.dll" />
+    <None Include="bin\Release\net6.0\refs\System.IO.Compression.dll" />
+    <None Include="bin\Release\net6.0\refs\System.IO.Compression.FileSystem.dll" />
+    <None Include="bin\Release\net6.0\refs\System.IO.Compression.ZipFile.dll" />
+    <None Include="bin\Release\net6.0\refs\System.IO.dll" />
+    <None Include="bin\Release\net6.0\refs\System.IO.FileSystem.AccessControl.dll" />
+    <None Include="bin\Release\net6.0\refs\System.IO.FileSystem.dll" />
+    <None Include="bin\Release\net6.0\refs\System.IO.FileSystem.DriveInfo.dll" />
+    <None Include="bin\Release\net6.0\refs\System.IO.FileSystem.Primitives.dll" />
+    <None Include="bin\Release\net6.0\refs\System.IO.FileSystem.Watcher.dll" />
+    <None Include="bin\Release\net6.0\refs\System.IO.IsolatedStorage.dll" />
+    <None Include="bin\Release\net6.0\refs\System.IO.MemoryMappedFiles.dll" />
+    <None Include="bin\Release\net6.0\refs\System.IO.Pipelines.dll" />
+    <None Include="bin\Release\net6.0\refs\System.IO.Pipes.AccessControl.dll" />
+    <None Include="bin\Release\net6.0\refs\System.IO.Pipes.dll" />
+    <None Include="bin\Release\net6.0\refs\System.IO.UnmanagedMemoryStream.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Linq.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Linq.Expressions.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Linq.Parallel.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Linq.Queryable.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Memory.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.Http.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.Http.Json.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.HttpListener.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.Mail.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.NameResolution.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.NetworkInformation.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.Ping.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.Primitives.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.Requests.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.Security.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.ServicePoint.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.Sockets.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.WebClient.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.WebHeaderCollection.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.WebProxy.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.WebSockets.Client.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Net.WebSockets.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Numerics.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Numerics.Vectors.dll" />
+    <None Include="bin\Release\net6.0\refs\System.ObjectModel.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Reflection.DispatchProxy.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Reflection.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Reflection.Emit.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Reflection.Emit.ILGeneration.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Reflection.Emit.Lightweight.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Reflection.Extensions.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Reflection.Metadata.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Reflection.Primitives.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Reflection.TypeExtensions.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Resources.Reader.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Resources.ResourceManager.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Resources.Writer.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Runtime.CompilerServices.VisualC.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Runtime.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Runtime.Extensions.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Runtime.Handles.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Runtime.InteropServices.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Runtime.Intrinsics.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Runtime.Loader.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Runtime.Numerics.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Runtime.Serialization.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Runtime.Serialization.Formatters.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Runtime.Serialization.Json.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Runtime.Serialization.Primitives.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Runtime.Serialization.Xml.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Security.AccessControl.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Security.Claims.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Security.Cryptography.Algorithms.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Security.Cryptography.Cng.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Security.Cryptography.Csp.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Security.Cryptography.Encoding.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Security.Cryptography.OpenSsl.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Security.Cryptography.Primitives.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Security.Cryptography.X509Certificates.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Security.Cryptography.Xml.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Security.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Security.Principal.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Security.Principal.Windows.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Security.SecureString.dll" />
+    <None Include="bin\Release\net6.0\refs\System.ServiceModel.Web.dll" />
+    <None Include="bin\Release\net6.0\refs\System.ServiceProcess.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Text.Encoding.CodePages.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Text.Encoding.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Text.Encoding.Extensions.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Text.Encodings.Web.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Text.Json.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Text.RegularExpressions.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Threading.Channels.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Threading.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Threading.Overlapped.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Threading.Tasks.Dataflow.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Threading.Tasks.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Threading.Tasks.Extensions.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Threading.Tasks.Parallel.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Threading.Thread.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Threading.ThreadPool.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Threading.Timer.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Transactions.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Transactions.Local.dll" />
+    <None Include="bin\Release\net6.0\refs\System.ValueTuple.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Web.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Web.HttpUtility.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Windows.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Xml.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Xml.Linq.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Xml.ReaderWriter.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Xml.Serialization.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Xml.XDocument.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Xml.XmlDocument.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Xml.XmlSerializer.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Xml.XPath.dll" />
+    <None Include="bin\Release\net6.0\refs\System.Xml.XPath.XDocument.dll" />
+    <None Include="bin\Release\net6.0\refs\WindowsBase.dll" />
+    <None Include="bin\Release\net6.0\RSS FEED.dll" />
+    <None Include="bin\Release\net6.0\RSS FEED.exe" />
+    <None Include="bin\Release\net6.0\RSS FEED.pdb" />
+    <None Include="bin\Release\net6.0\runtimes\linux-arm64\native\libgrpc_csharp_ext.arm64.so" />
+    <None Include="bin\Release\net6.0\runtimes\linux-x64\native\libgrpc_csharp_ext.x64.so" />
+    <None Include="bin\Release\net6.0\runtimes\osx-x64\native\libgrpc_csharp_ext.x64.dylib" />
+    <None Include="bin\Release\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll" />
+    <None Include="bin\Release\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Release\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Release\net6.0\runtimes\win-x64\native\grpc_csharp_ext.x64.dll" />
+    <None Include="bin\Release\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Release\net6.0\runtimes\win-x86\native\grpc_csharp_ext.x86.dll" />
+    <None Include="bin\Release\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Release\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll" />
+    <None Include="bin\Release\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll" />
+    <None Include="bin\Release\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Release\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll" />
+    <None Include="bin\Release\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Release\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Release\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Release\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\ru\Microsoft.CodeAnalysis.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\ru\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Release\net6.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll" />
+    <None Include="bin\Release\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" />
+    <None Include="bin\Release\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\System.Composition.AttributedModel.dll" />
+    <None Include="bin\Release\net6.0\System.Composition.Convention.dll" />
+    <None Include="bin\Release\net6.0\System.Composition.Hosting.dll" />
+    <None Include="bin\Release\net6.0\System.Composition.Runtime.dll" />
+    <None Include="bin\Release\net6.0\System.Composition.TypedParts.dll" />
+    <None Include="bin\Release\net6.0\System.Configuration.ConfigurationManager.dll" />
+    <None Include="bin\Release\net6.0\System.Drawing.Common.dll" />
+    <None Include="bin\Release\net6.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <None Include="bin\Release\net6.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Release\net6.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Release\net6.0\System.Security.Permissions.dll" />
+    <None Include="bin\Release\net6.0\System.Web.Helpers.dll" />
+    <None Include="bin\Release\net6.0\System.Web.Mvc.dll" />
+    <None Include="bin\Release\net6.0\System.Web.Razor.dll" />
+    <None Include="bin\Release\net6.0\System.Web.WebPages.Deployment.dll" />
+    <None Include="bin\Release\net6.0\System.Web.WebPages.dll" />
+    <None Include="bin\Release\net6.0\System.Web.WebPages.Razor.dll" />
+    <None Include="bin\Release\net6.0\System.Windows.Extensions.dll" />
+    <None Include="bin\Release\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Release\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\tr\Microsoft.CodeAnalysis.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\tr\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Release\net6.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll" />
+    <None Include="bin\Release\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" />
+    <None Include="bin\Release\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\web.config" />
+    <None Include="bin\Release\net6.0\xunit.abstractions.dll" />
+    <None Include="bin\Release\net6.0\xunit.core.dll" />
+    <None Include="bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" />
+    <None Include="bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="Views\Privacy\Index.cshtml" />
+    <None Include="Views\RSSFeed\Index.cshtml" />
+    <None Include="Views\Winima\Index.cshtml" />
+    <None Include="wwwroot\CSS\Winima.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\net4\" />
+    <Folder Include="bin\Release\net6.0\amd64\Microsoft.VC90.CRT\" />
+    <Folder Include="bin\Release\net6.0\runtimes\unix\lib\netcoreapp3.0\" />
+    <Folder Include="bin\Release\net6.0\runtimes\unix\lib\netstandard2.0\" />
+    <Folder Include="bin\Release\net6.0\runtimes\win-arm64\lib\net5.0\" />
+    <Folder Include="bin\Release\net6.0\runtimes\win-arm\lib\net5.0\" />
+    <Folder Include="bin\Release\net6.0\runtimes\win-x64\native\Microsoft.VC90.CRT\" />
+    <Folder Include="bin\Release\net6.0\runtimes\win-x86\native\Microsoft.VC90.CRT\" />
+    <Folder Include="bin\Release\net6.0\runtimes\win\lib\netcoreapp3.0\" />
+    <Folder Include="bin\Release\net6.0\x86\Microsoft.VC90.CRT\" />
+    <Folder Include="wwwroot\Pic\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Shared\_Layout.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\CSS\site.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\CSS\style.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\favicon.ico">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\js\site.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\LICENSE">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation\dist\additional-methods.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation\dist\additional-methods.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation\dist\jquery.validate.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation\LICENSE.md">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery\dist\jquery.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery\dist\jquery.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery\dist\jquery.min.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery\LICENSE.txt">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
